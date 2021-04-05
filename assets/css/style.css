@@ -1,0 +1,23 @@
+#h1-heading {
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  padding-top: 30px;
+ width: 100%;
+
+.row {
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.col-4 {
+  text-align: center;
+  width: 100%;
+}
+
+.col-8 {
+  text-align: center;
+  width: 100%;
+}
