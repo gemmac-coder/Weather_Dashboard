@@ -3,13 +3,24 @@
   padding: 20px;
 }
 
-.container {
-  padding-top: 30px;
- width: 100%;
-
 .row {
   padding-top: 30px;
   padding-left: 10px;
+  width: 100%;
+}
+
+#div-row {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 95%;
+}
+
+#left-column {
+  margin-left: 20px;
+}
+
+.col {
+  margin-left: 20px;
 }
 
 .col-4 {
@@ -17,7 +28,14 @@
   width: 100%;
 }
 
+#searchbar {
+  margin-left: 15%;
+}
+
 .col-8 {
   text-align: center;
   width: 100%;
 }
+
+h2 {
+  padding-bottom: 20px;

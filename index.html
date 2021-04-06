@@ -21,14 +21,31 @@
       <div id="main-container">
       
 
-    <div class="container">
-      <div class="d-flex row">
-        <div class="col-4 border border-info bg-light">col-4 <form class=" form-inline my-2 my-lg-0 p-5">
+  
+      <div class="d-flex row" id="div-row">
+        <div class="col-4 border border-info bg-light" id='left-column"'>col-4 <form class=" form-inline my-2 my-lg-0 p-5" id="searchbar">
           <input class="form-control mr-sm-2" type="search" placeholder="Enter city name" aria-label="Search">
           <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-        </form></div>
-        <div class="col-8 border border-info bg-light">col-8</div>
-  </div>
+        </form>
+        <ul class="list-group">
+          <li class="list-group-item">London, GB</li>
+          <li class="list-group-item">Birmingham, GB</li>
+          <li class="list-group-item">Manchester, GB</li>
+          <li class="list-group-item">Liverpool. GB</li>
+          <li class="list-group-item">Bristol, GB</li>
+        </ul></div>
+        <div class="col-8 border border-info bg-light">col-8
+          <div id="current-weather-div">
+          <h2>London, GB</h2>
+          <ul class="list-group">
+            <li class="list-group-item">Temperature: 7&deg;C</li>
+            <li class="list-group-item">Humidity: 67%</li>
+            <li class="list-group-item">Wind Speed: 7 mph</li>
+            <li class="list-group-item">UV Index: Low</li>
+          </ul></div>
+          </div>
+        
+        </div>
   </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
