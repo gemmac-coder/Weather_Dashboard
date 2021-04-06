@@ -1,3 +1,10 @@
+// api urls:
+// london: http://api.openweathermap.org/data/2.5/weather?q=london&appid=7a477fc97ce6ec662b6caf75ca1cc2b3
+// birmingham: http://api.openweathermap.org/data/2.5/weather?q=birmingham,gb&appid=7a477fc97ce6ec662b6caf75ca1cc2b3
+// manchester: http://api.openweathermap.org/data/2.5/weather?q=manchester,gb&appid=7a477fc97ce6ec662b6caf75ca1cc2b3
+// liverpool: http://api.openweathermap.org/data/2.5/weather?q=liverpool,gb&appid=7a477fc97ce6ec662b6caf75ca1cc2b3
+// bristol: http://api.openweathermap.org/data/2.5/weather?q=bristol,gb&appid=7a477fc97ce6ec662b6caf75ca1cc2b3
+
 const renderCities = (citiesFromLocalStorage) => {
   // For each city construct a list item and append to the list group
 };
