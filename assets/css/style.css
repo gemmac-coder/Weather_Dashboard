@@ -1,0 +1,17 @@
+.uvi {
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.uvi-low {
+  background-color: green;
+}
+
+.uvi-medium {
+  background-color: orange;
+}
+
+.uvi-high {
+  background-color: red;
+}

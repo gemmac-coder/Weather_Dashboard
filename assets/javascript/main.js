@@ -59,7 +59,9 @@ const onSubmit = async (event) => {
   const cityName = $("#city-input").val();
   const cities = getFromLocalStorage();
 
-  cities.push(cityName);
+  if (!cities.includes(cityName)) {
+    cities.push(cityName);
+  }
 
   localStorage.setItem("cities", JSON.stringify(cities));
 
@@ -118,12 +120,12 @@ const renderCitiesFromLocalStorage = () => {
 
 // FIX this function with the right class names and threshold values and then use in renderCurrentDayCard()
 const getUvIndexClass = (uvIndex) => {
-  if (uvIndex > 2) {
-    return "p-2 bg-primary text-white";
-  } else if (uvIndex < 2) {
-    return "p-2 bg-danger text-white";
+  if (uvIndex < 3) {
+    return "uvi-low";
+  } else if (uvIndex > 3 && uvIndex < 6) {
+    return "uvi-medium";
   } else {
-    return "";
+    return "uvi-high";
   }
 };
 
@@ -138,7 +140,9 @@ const renderCurrentDayCard = (data) => {
       <div class="py-2">Temperature: ${data.temperature}&deg; C</div>
       <div class="py-2">Humidity: ${data.humidity}%</div>
       <div class="py-2">Wind Speed: ${data.windSpeed} MPH</div>
-      <div class="py-2">UV Index: <span class="">${data.uvi}</span></div>
+      <div class="py-2">UV Index: <span class="uvi ${getUvIndexClass(
+        data.uvi
+      )}">${data.uvi}</span></div>
     </div>
   </div>`;
 
