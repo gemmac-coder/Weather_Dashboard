@@ -71,7 +71,7 @@ const onSubmit = async (event) => {
 };
 
 const renderAllCards = async (cityName) => {
-  const currentDayUrl = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=imperial&appid=${API_KEY}`;
+  const currentDayUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=imperial&appid=${API_KEY}`;
 
   const currentDayResponse = await fetchData(currentDayUrl);
 
