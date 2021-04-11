@@ -1,17 +1,22 @@
+/*Generic UV index class with shared properties for all UV index values*/
+
 .uvi {
   color: white;
   padding: 0.5rem;
   border-radius: 5px;
 }
 
+/* Class for low UV Index Values*/
 .uvi-low {
   background-color: green;
 }
 
+/* Class for medium  UV Index Values*/
 .uvi-medium {
   background-color: orange;
 }
 
+/* Class for high UV Index Values*/
 .uvi-high {
   background-color: red;
 }
