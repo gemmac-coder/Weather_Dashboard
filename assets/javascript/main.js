@@ -13,7 +13,7 @@ const getFromLocalStorage = () => {
   }
 };
 
-// Async function fetches data
+// Async function fetches data from current weather data and one call APIs
 const fetchData = async (url) => {
   try {
     const response = await fetch(url);
