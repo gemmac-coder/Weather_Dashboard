@@ -18,4 +18,4 @@ Dynamic weather dashboard project that uses the Current Weather Data API and One
 
 ## Link to deployed application:
 
-https://gemmac-coder.github.io/Weather_Dashboard/
+https://gemmac-coder.github.io/weather-dashboard/
